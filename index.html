@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Password Generator</title>
+    <title>Random Photos</title>
     <link rel="stylesheet" href="style.css">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="password-container">
-        <h2>Random Password Generator</h2>
-        <input type="number" id="len" class="input" placeholder="Length of Password" min="5" max="16">
-        <div class="input-container">
-            <input type="text" id="input" class="input" placeholder="Create Password" readonly>
-            <!-- readonly will restrict user to writing in it -->
+    <div class="image-container">
+        <!-- 
+! to get random image -> https://picsum.photos/
+or search for lorem picsum on google
 
-            <i class="fa-regular fa-copy fa-2x"></i>
-        </div>
-        <button class="btn">Generate</button>
+links to random images are generated like this:
+* https://picsum.photos/200/300 where 200 is width and 300 is height
+* https://picsum.photos/200 -> square image
+
+! the above query may result in same image being 
+displayed to avoid this we can add a random query 
+number to the end of the query
+* https://picsum.photos/200/300?random=2 
+         -->
+
+        <img src="https://picsum.photos/300?random=1" alt="random1">
+        <img src="https://picsum.photos/300?random=2" alt="random2">
+        <img src="https://picsum.photos/300?random=3" alt="random3">
+        <img src="https://picsum.photos/300?random=4" alt="random4">
+        <img src="https://picsum.photos/300?random=5" alt="random5">
+        <img src="https://picsum.photos/300?random=6" alt="random6">
+        <img src="https://picsum.photos/300?random=7" alt="random7">
+        <img src="https://picsum.photos/300?random=8" alt="random8">
     </div>
 
-    <div class="alert-container active">
+    <button class="btn">Load More</button>
 
-    </div>
 
     <script src="script.js"></script>
 </body>
